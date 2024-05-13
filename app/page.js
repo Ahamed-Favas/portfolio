@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import axios from "axios"
+import Image from 'next/image';
 
 export default function Home() {
   const getIp = async () => {
@@ -25,8 +26,18 @@ export default function Home() {
     getIp()
   },[])
   return (
-    <main>
-      <h1>Giiigity</h1>
-    </main>
+<>
+    <div>
+        <Image
+            
+            src="/assets/gif.gif"
+            unoptimized
+            alt="gif"
+            width={560}
+            height={640}
+        />
+    </div>
+</>
+
   );
 }
