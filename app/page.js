@@ -26,18 +26,17 @@ export default function Home() {
     getIp()
   },[])
   return (
-<>
-    <div>
-        <Image
-            
+<main>
+    <div className="gif-container">
+        <img
             src="/assets/gif.gif"
-            unoptimized
             alt="gif"
-            width={560}
-            height={640}
+            width="560"
+            height="640"
         />
     </div>
-</>
+</main>
+
 
   );
 }
